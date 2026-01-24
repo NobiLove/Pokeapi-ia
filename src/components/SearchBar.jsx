@@ -54,9 +54,9 @@ const SearchBar = ({ onSearch, suggestions = [] }) => {
                     }}
                     onFocus={() => setShowSuggestions(true)}
                     placeholder="Search Pokemon..."
-                    className="w-full px-6 py-4 pl-14 rounded-2xl glass-panel placeholder-[var(--text-primary)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--glass-border)] transition-all shadow-lg"
+                    className="w-full px-4 md:px-6 py-4 pl-12 md:pl-14 rounded-2xl glass-panel placeholder-[var(--text-primary)]/50 focus:outline-none focus:ring-2 focus:ring-[var(--glass-border)] transition-all shadow-lg"
                 />
-                <Search className="absolute left-5 top-1/2 transform -translate-y-1/2 text-dynamic opacity-50 w-6 h-6 group-focus-within:opacity-100 transition-opacity" />
+                <Search className="absolute left-4 md:left-5 top-1/2 transform -translate-y-1/2 text-dynamic opacity-50 w-6 h-6 group-focus-within:opacity-100 transition-opacity" />
                 <button
                     type="submit"
                     className="absolute right-2 top-1/2 transform -translate-y-1/2 glass-card p-2 rounded-xl transition-colors text-dynamic opacity-80 hover:opacity-100"

@@ -39,15 +39,15 @@ const PokemonModal = ({ pokemon, onClose }) => {
 
                         <div className="flex flex-col md:flex-row">
                             {/* Image Section */}
-                            <div className="w-full md:w-1/2 p-8 flex flex-col items-center justify-center relative">
-                                <div className="text-[12rem] font-black text-white/5 absolute top-10 left-10 leading-none select-none">
+                            <div className="w-full md:w-1/2 p-6 md:p-8 flex flex-col items-center justify-center relative">
+                                <div className="text-[8rem] md:text-[12rem] font-black text-white/5 absolute top-4 left-4 md:top-10 md:left-10 leading-none select-none">
                                     #{String(id).padStart(3, '0')}
                                 </div>
                                 <motion.img
                                     layoutId={`image-${id}`}
                                     src={image}
                                     alt={name}
-                                    className="w-64 h-64 object-contain z-10 drop-shadow-2xl"
+                                    className="w-40 h-40 md:w-64 md:h-64 object-contain z-10 drop-shadow-2xl"
                                 />
                                 <div className="flex gap-2 mt-6 z-10">
                                     {types.map((t) => (
@@ -57,7 +57,7 @@ const PokemonModal = ({ pokemon, onClose }) => {
                             </div>
 
                             {/* Details Section */}
-                            <div className="w-full md:w-1/2 p-8 bg-black/20 text-white">
+                            <div className="w-full md:w-1/2 p-6 md:p-8 bg-black/20 text-white">
                                 <h2 className="text-4xl font-bold capitalize mb-6">{name}</h2>
 
                                 <div className="grid grid-cols-2 gap-4 mb-8">

@@ -14,14 +14,14 @@ function App() {
 
   return (
     <div className="min-h-screen pb-20">
-      <header className="py-12 px-4 text-center relative z-10">
+      <header className="py-8 md:py-12 px-4 text-center relative z-10">
         <div className="absolute top-6 right-6 z-20">
           <ThemeToggle />
         </div>
         <motion.h1
           initial={{ y: -50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
-          className="text-6xl font-black mb-2 tracking-tighter drop-shadow-lg text-dynamic"
+          className="text-4xl md:text-6xl font-black mb-2 tracking-tighter drop-shadow-lg text-dynamic"
         >
           POKÉDEX
         </motion.h1>
