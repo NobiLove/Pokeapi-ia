@@ -88,7 +88,7 @@ const PokemonModal = ({ pokemon, onClose }) => {
                                                 <div className="flex-1 h-2 bg-white/10 rounded-full overflow-hidden">
                                                     <motion.div
                                                         initial={{ width: 0 }}
-                                                        animate={{ width: `${Math.min(stat.base_stat, 100)}%` }}
+                                                        animate={{ width: `${Math.min((stat.base_stat / 255) * 100, 100)}%` }}
                                                         transition={{ duration: 1, delay: 0.2 }}
                                                         className="h-full bg-white/80 rounded-full"
                                                     />
